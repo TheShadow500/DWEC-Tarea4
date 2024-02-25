@@ -1,0 +1,184 @@
+/* Fonts */
+/* ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+/* Catamaran */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+/* Anta */
+/* ------------------------------------------------------------ */
+
+
+/* Variables */
+/* ------------------------------------------------------------ */
+:root{
+    --colorblanco: #ffffff;
+    --colornegro: #000000;
+    --colorcrema: #fff8dc;
+    --colorsepia: #5e3916;
+    --colormarron: #deb887;
+    --colornaranja: #ffa500;
+    --colorgrismarron: #99938e;
+    --colorrojo: #ff0000;
+    --colorverde: #008000;
+}
+/* ------------------------------------------------------------ */
+
+
+/* Estructura */
+/* ------------------------------------------------------------ */
+*{
+    user-select: none;
+}
+
+body{
+    margin: 0;
+    color: var(--colorsepia);
+    font-weight: bold;
+    background-color: var(--colorcrema);
+    font-family: "Catamaran";
+}
+
+header{
+    font-family: "Anta";
+    font-size: 60pt;
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 7px;
+}
+/* ------------------------------------------------------------ */
+
+/* Formulario */
+/* ------------------------------------------------------------ */
+.container{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.formulario{
+    border: 3px solid var(--colorsepia);
+    flex-direction: column;
+    background-color: var(--colormarron);
+    width: 50%;
+    border-radius: 10px;
+}
+
+.fila1{
+    padding-top: 30px;
+}
+
+.fila2{
+    padding-bottom: 10px;
+}
+
+.fila3{
+    padding: 10px;
+    text-align: center;
+}
+
+.fila4{
+    flex-direction: column;
+    align-items: center;
+    font-size: 10pt;
+    padding-bottom: 10px;
+}
+
+.fila5{
+    padding: 30px;
+}
+
+.informacion{
+    font-size: 16pt;
+    padding: 20px;
+}
+
+.celdai{
+    align-self: center;
+    padding: 10px;
+}
+
+.celdad{
+    padding: 10px;
+}
+/* ------------------------------------------------------------ */
+
+
+/* Elementos Formulario */
+/* ------------------------------------------------------------ */
+input{
+    outline: none;
+    color: var(--colorsepia);
+    border: 2px solid var(--colorsepia);
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input:hover{
+    background-color: var(--colorcrema);
+}
+
+input:focus{
+    border: 2px solid var(--colorsepia);
+    outline: 1px solid var(--colorblanco);
+    background-color: var(--colorcrema);
+}
+
+button{
+    color: var(--colorblanco);
+    border: 2px solid var(--colorcrema);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--colorsepia);
+    box-shadow: 3px 3px 4px 1px var(--colorsepia);
+}
+
+button:hover{
+    color: var(--colornaranja);
+    outline: 2px solid var(--colornaranja);
+    background-color: var(--colorsepia);
+}
+
+button:active{
+    box-shadow: 0 0;
+}
+
+button:disabled{
+    background-color: var(--colorgrismarron);
+    color: var(--colorblanco);
+    outline: none;
+    box-shadow: 0 0;
+}
+
+.checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--colorcrema);
+}
+
+.checkbox:hover{
+    background-color: var(--colormarron);
+}
+
+.checkbox:checked + label::before{
+    position: absolute;
+    content: '\2713';
+    font-size: 28px;
+    color: var(--colorsepia);
+    transform: translate(-105%, -25%);
+}
+/* ------------------------------------------------------------ */
+
+
+/* Elementos Comunes */
+/* ------------------------------------------------------------ */
+.justify{
+    display: flex;
+    justify-content: center;
+}
+/* ------------------------------------------------------------ */

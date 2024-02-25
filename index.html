@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DWEC - Tarea 4 - Presencial</title>
+</head>
+<body>
+    <div class="container justify">
+        <header class="justify">
+            Acceso
+        </header>
+        <main class="justify">
+            <div class="formulario justify">
+                <div class="fila1 justify">
+                    <div class="celdai"><label for="contrasena">Contraseña</label></div>
+                    <div class="celdad"><input type="password" name="contrasena" id="contrasena" minlength="6" maxlength="15"></div>
+                </div>
+                <div class="fila2 justify">
+                    <div class="celdai"><label for="verificar">Repita Contraseña</label></div>
+                    <div class="celdad"><input type="password" name="verificar" id="verificar"></div>
+                </div>
+                <div class="fila3 justify">
+                    <input type="checkbox" class="checkbox" name="condiciones" id="condiciones">
+                    <label for="condiciones">Acepta los Terminos y Condiciones</label>
+                </div>
+                <div class="fila4 justify">
+                    <div class="verificarcontrasena" id="verificarcontrasena">- Contraseña: Mínimo 6 caract. | Máximo 15 caract.</div>
+                    <div class="verificarrepetir" id="verificarrepetir">- Verificar: Mínimo 6 caract. | Máximo 15 caract.</div>
+                    <div class="verificarmayusculas" id="verificarmayusculas">- No acepta mayúsculas (control automático)</div>
+                    <div class="verificarcoincidencia" id="verificarcoincidencia">- Las contraseñas deben coincidir</div>
+                    <div class="verificarcondiciones" id="verificarcondiciones">- Obligatorio aceptar las condiciones</div>
+                </div>
+                <div class="fila5 justify">
+                    <button id="enviar" disabled>Crear Contraseña</button>
+                </div>
+                <div class="informacion justify" id="informacion"></div>
+            </div>
+        </main>
+        <footer class="justify">
+            <div class="pie">
+                DWEC - Ejercicio 4 Presencial<br>
+                Daniel Amores Corzo
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script src="./js/main.js"></script>
